@@ -24,7 +24,6 @@ body {
 .header1 {
     font-family: cursive;
     font-size:4cap;
-    padding: auto;
     text-align: center;
     vertical-align: middle;
     height: 100px;
@@ -56,12 +55,6 @@ body {
     background-color: tomato;
 }
 
-@media (max-width: 800px) {
-    .container {
-      flex-direction: column;
-    }
-  }
-
 .iframe iframe {
     width: 1280px;
     margin: 20px;
@@ -76,3 +69,28 @@ hr {
     border-style: solid;
     border-color: brown;
 }
+
+@media (max-width: 800px) {
+    body {
+        width: 90%;
+    }
+    .container {
+      flex-direction: column;
+    }
+    .header1 {
+        height: auto;
+        font-size: 4vw;
+    }
+    .celements1 {
+        min-width: auto;
+        font-size: 10vw;
+        font-size: 10vh;
+    }
+    .iframe iframe {
+        max-width:90%;
+        max-height: 90%;
+    }
+    .celements1, .iframe iframe {
+        margin: 2%;
+    }
+  }

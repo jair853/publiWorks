@@ -116,7 +116,6 @@ small {
 }
 
 .linked {
-    font-family: t;
     color: blue;
     font-size: small;
     text-decoration-line: underline;
@@ -137,4 +136,19 @@ small {
 
 .inner1 {
     color: black;
+}
+
+@media (max-width: 768px) {
+    body, table, table thead th,
+    .firstlabel, .inner {
+        width: 100%;
+        padding: 0%;
+    }
+    
+    .definition .description .par-list,
+    .paragraph, header h1, div h1,
+    .labeled1, .labeled2, td, .li1,
+    .li2 {
+        font-size: 90%;
+    }
 }
