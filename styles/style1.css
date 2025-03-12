@@ -4,6 +4,7 @@ body {
 .container {
     display: flex;
     gap: 2px;
+    flex-direction: row;
 }
 
 @keyframes fadeBackground {
@@ -22,7 +23,7 @@ body {
 
 .header1 {
     font-family: cursive;
-    font-size: 4cap;
+    font-size:4cap;
     padding: auto;
     text-align: center;
     vertical-align: middle;
@@ -54,6 +55,12 @@ body {
 .celements1:hover {
     background-color: tomato;
 }
+
+@media (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+  }
 
 .iframe iframe {
     width: 1280px;
